@@ -1,7 +1,8 @@
 <div class="ekart--search--product">
      <!-- teplate reference variable #searchInput -->
     <input class="ekart-search-product-input" #searchInput> 
-    <button class="btn btn-search" (click)="upateSearchText(searchInput)">Search</button>
+    <!-- <button class="btn btn-search" (click)="upateSearchText(searchInput)">Search</button> -->
+    <button class="btn btn-search" (click)="upateSearchText()">Search</button>
 </div>
 <div class="ekart-search-result-for">
     <p *ngIf="searchText !=''"><strong>Search result for:</strong> {{ searchText }}</p>
