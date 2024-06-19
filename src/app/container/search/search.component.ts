@@ -19,7 +19,8 @@ export class SearchComponent {
     this.searchTextChanged.emit(this.searchText);
   }
   
-  upateSearchText(event: any){
-      this.searchText = event.target.value;
+  upateSearchText(inputEle: HTMLInputElement){
+      this.searchText = inputEle.value;
+      this.searchTextChanged.emit(this.searchText);
   }
 }
